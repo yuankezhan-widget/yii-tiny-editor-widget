@@ -1,0 +1,29 @@
+{
+    "name": "yuankezhan/yii-tiny-editor",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "yuankezhan\\yiiTinyEditor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zhc",
+            "email": "741698941@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "yuankezhan/yii2-widget-media-library": ">=^1.0.3"
+    },
+
+    "require-dev": {
+        "php": ">=5.4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

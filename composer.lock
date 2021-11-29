@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b707ac133293cdc4221e2a5c96e980a8",
+    "packages": [
+        {
+            "name": "yuankezhan/yii2-widget-media-library",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/741698941/yii2-widget-media-library.git",
+                "reference": "6eda9394d9f1cc33a4685c3fba490e3ac23e66fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/741698941/yii2-widget-media-library/zipball/6eda9394d9f1cc33a4685c3fba490e3ac23e66fe",
+                "reference": "6eda9394d9f1cc33a4685c3fba490e3ac23e66fe",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yuankezhan\\mediaLibrary\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "张海春",
+                    "email": "741698941@qq.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/741698941/yii2-widget-media-library/issues",
+                "source": "https://github.com/741698941/yii2-widget-media-library/tree/v1.0.3"
+            },
+            "time": "2021-11-13T01:15:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": {
+        "php": ">=5.4"
+    },
+    "plugin-api-version": "2.1.0"
+}
