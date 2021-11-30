@@ -18,6 +18,7 @@ class TinyEditor extends InputWidget
     public $name = '';
 
     /**
+     * 媒体库配置
      * 'mediaConfig' => [
      *     "imgListUrl" => Url::to(['media/get-img-list']),
      *     "groupListUrl" => Url::to(['media/group-list']),
