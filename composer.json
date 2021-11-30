@@ -9,7 +9,7 @@
     },
     "require": {
         "php": ">=5.4",
-        "yuankezhan/yii2-widget-media-library": "^1.0.3"
+        "yuankezhan/yii2-widget-media-library": ">=^1.0"
     },
 
     "extra": {
