@@ -16,11 +16,5 @@
     "require": {
         "php": ">=7.0",
         "yuankezhan/yii2-widget-media-library": ">=1.0"
-    },
-
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
     }
 }
