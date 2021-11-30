@@ -7,15 +7,10 @@
             "yuankezhan\\yiiTinyEditor\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "zhc",
-            "email": "741698941@qq.com"
-        }
-    ],
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4",
-        "yuankezhan/yii2-widget-media-library": "=^1.0.3"
+        "yuankezhan/yii2-widget-media-library": "^1.0.3"
     },
 
     "extra": {
