@@ -1,0 +1,27 @@
+{
+    "name": "yuankezhan/yii-tiny-editor",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "yuankezhan\\yiiTinyEditor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "张海春",
+            "email": "741698941@qq.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=5.4",
+        "yuankezhan/yii2-widget-media-library": ">=1.0"
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

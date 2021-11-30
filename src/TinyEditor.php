@@ -1,5 +1,5 @@
 <?php
-namespace yuankezhan\tinyEditor;
+namespace yuankezhan\yiiTinyEditor;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\Html;
@@ -7,15 +7,26 @@ use yii\widgets\InputWidget;
 
 class TinyEditor extends InputWidget
 {
-    public $ClassId = 'editor';//编辑器创建选择器
-    public $IsShowMenu = false;
-    public $Toolbar = ['fullscreen code undo redo restoredraft | forecolor backcolor bold italic underline strikethrough link anchor | alignleft aligncenter alignright alignjustify lineheight outdent indent indent2em beforemargin aftermargin | styleselect formatselect fontselect fontsizeselect | bullist numlist | blockquote subscript superscript removeformat table media charmap emoticons pagebreak insertdatetime print preview bdmap formatpainter mediaLibrary'];
-    public $LanguageType = 'zh_CN';
-    public $Height = 400;//最小高度
-    public $Inline = false;//false：经典模式，true：内联样式
-    public $ContentStyle = '';//可直接写编辑器样式
-    public $ContentHtml = '';
-    public $Name = '';
+    public $classId = 'editor';//编辑器创建选择器
+    public $isShowMenu = false;
+    public $toolbar = ['fullscreen code undo redo restoredraft | forecolor backcolor bold italic underline strikethrough link anchor | alignleft aligncenter alignright alignjustify lineheight outdent indent indent2em beforemargin aftermargin | styleselect formatselect fontselect fontsizeselect | bullist numlist | blockquote subscript superscript removeformat table media charmap emoticons pagebreak insertdatetime print preview bdmap formatpainter mediaLibrary'];
+    public $languageType = 'zh_CN';
+    public $height = 400;//最小高度
+    public $inline = false;//false：经典模式，true：内联样式
+    public $contentStyle = '';//可直接写编辑器样式
+    public $contentHtml = '';
+    public $name = '';
+
+    /**
+     * 'mediaConfig' => [
+     *     "imgListUrl" => Url::to(['media/get-img-list']),
+     *     "groupListUrl" => Url::to(['media/group-list']),
+     *     "addImgUrl" => Url::to(['upload/upload']),
+     *     "addGroupUrl" => Url::to(['media/add-group']),
+     * ],
+     * @var array
+     */
+    public $mediaConfig = [];
 
     public function init()
     {
@@ -33,15 +44,16 @@ class TinyEditor extends InputWidget
     public function run()
     {
         return $this->render('TinyEditor', [
-            'classId' => $this->ClassId,
-            'isShowMenu' => $this->IsShowMenu,
-            'toolbar' => $this->Toolbar,
-            'language' => $this->LanguageType,
-            'height' => $this->Height,
-            'inline' => $this->Inline,
-            'content_style' => $this->ContentStyle,
-            'name' => $this->Name,
-            'content' => empty($this->model) ? $this->ContentHtml : $this->model->toArray()[$this->options['id']]
+            'classId' => $this->classId,
+            'isShowMenu' => $this->isShowMenu,
+            'toolbar' => $this->toolbar,
+            'language' => $this->languageType,
+            'height' => $this->height,
+            'inline' => $this->inline,
+            'content_style' => $this->contentStyle,
+            'name' => $this->name,
+            'mediaConfig' => $this->mediaConfig,
+            'content' => empty($this->model) ? $this->contentHtml : $this->model->toArray()[$this->options['id']]
         ]);
     }
 }

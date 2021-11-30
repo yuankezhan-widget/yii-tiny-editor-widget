@@ -5,9 +5,7 @@ use backend\assets\AppAsset;
 use yii\helpers\Url;
 use yuankezhan\mediaLibrary\MediaLibrary;
 
-//AppAsset::register($this);
-//只在该视图中使用非全局的jui
-AppAsset::addScript($this, '/backend/widgets/tinyEditor/views/tinymce/js/tinymce/tinymce.min.js');
+\yuankezhan\yiiTinyEditor\EditorAssets::register($this);
 ?>
 <?= MediaLibrary::widget([
     'boxClassName' => ['editor-media-box']
@@ -16,10 +14,10 @@ AppAsset::addScript($this, '/backend/widgets/tinyEditor/views/tinymce/js/tinymce
 <script>
 
     var editorMediaUpload_<?= $classId?> = new mediaLibrary().init({
-        imgListUrl : "<?=Url::to(['media/get-img-list'])?>",
-        groupListUrl : "<?=Url::to(['media/group-list'])?>",
-        addImgUrl : "<?=Url::to(['upload/upload'])?>",
-        addGroupUrl : "<?=Url::to(['media/add-group'])?>",
+        imgListUrl : "<?=$mediaConfig['imgListUrl']?>",
+        groupListUrl : "<?=$mediaConfig['groupListUrl']?>",
+        addImgUrl : "<?=$mediaConfig['addImgUrl']?>",
+        addGroupUrl : "<?=$mediaConfig['addGroupUrl']?>",
         sureCallback : "addImg_<?= $classId?>",
         boxClassName : "editor-media-box"
     });
