@@ -51,3 +51,4 @@ use yuankezhan\yiiTinyEditor\TinyEditor;
     'contentStyle' => 'html{font-size: 10px}',
 ])->label(false, ["class" => "control-label"]) ?>
 ```
+![输入图片说明](111.png)
