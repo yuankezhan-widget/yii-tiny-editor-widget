@@ -5,7 +5,7 @@ yii widget 媒体库
 
 #### 安装教程
 
-1.  composer require yuankezhan/yii-tiny-editor
+1.  composer require yuankezhan/yii-tiny-editor-widget
 
 
 #### 使用说明
