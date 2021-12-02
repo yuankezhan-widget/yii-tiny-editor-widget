@@ -1,5 +1,5 @@
 {
-    "name": "yuankezhan/yii-tiny-editor",
+    "name": "yuankezhan/yii-tiny-editor-widget",
     "type": "library",
     "license": "MIT",
     "autoload": {
