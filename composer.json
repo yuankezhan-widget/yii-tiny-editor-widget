@@ -14,7 +14,6 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
         "yuankezhan/yii2-widget-media-library": ">=1.0"
     }
 }
